@@ -44,7 +44,8 @@ if (button and user_input.strip()!=""):
     # Display the result
     st.write(f'Sentiment: {sentiment}')
     st.write(f'Prediction Score: {prediction[0][0]}')
-elif(user_input.strip()==""):
+elif user_input.strip()=="" and button:
     st.write('Please enter a valid movie review')
+
 
 
